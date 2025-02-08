@@ -9,7 +9,7 @@ $(function(){
         },0);  
       }
       else {
-        $(".content1").stop(true, true).animate({ top: 800 }, 0);
+        $(".content1").stop(true, true).animate({ top: 850 }, 0);
       }
     });
 
