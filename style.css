@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+body {
+    margin: 0;
+}
+
+.style {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    background-image: url("images/main-image.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover; 
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    align-items: center;    /* 水平方向に中央揃え */
+}
+
+.content1 {
+    position: absolute;
+    top: 250px;
+    text-align: center;
+}
+
+.content1 p {
+    color: white;
+    margin-top: 200px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+h1 {
+    width: 200px;
+}
+
+
+h2 {
+    color: white;
+    margin-top: 80px;
+    font-size: 60px;
+    line-height: 100px;
+    transition: color 0.3s ease;
+}
+
+.content2 {
+    margin-top: 400px;
+}
+
+.content2 p {
+    margin-top: 40px;
+}
+
+.content3 {
+    margin-top: 150px;
+}
+
+.content3 p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.content3 h3 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+.content3-wrapper {
+    display: flex;
+    margin-top: 30px;
+}
+
+.content-left {
+    width: 25%;
+}
+
+.content-left img {
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.content-right {
+    width: 75%;
+    margin-left: 10px;
+}
+
+.content-right p {
+    text-align: left;
+    line-height: 30px;
+}
+
+.line2 {
+    margin-top: 30px;
+}
+
+.content4 {
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.content4 img {
+    width: 80%;
+    height: 60%;
+    object-fit: cover;
+    transition: all .5s;
+}
+
+.content4 img:hover {
+    width: 100vw;
+    height: 100%;
+}
+
+.content5 h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.content5-wrapper {
+    background-color: rgb(187, 187, 187);
+    margin-top: 50px;
+}
+
+.content5-wrapper img{
+    width: 40%;
+    height: 50vh;
+    height: 100%;
+}
+
+.content5-wrapper article {
+    display: flex !important;
+    background-color: white;
+    margin: auto;
+    width: 30%;
+    margin: 20px;
+    height: 40vh;
+}
+
+.article-contents {
+    text-align:  center; 
+    margin: auto;
+    width: 70%;
+}
+
+.article-contents h4 {
+    font-size: 20px;
+}
+
+.article-contents p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.content6 {
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.content6 a {
+    text-decoration: none;
+}
+
+.content6-left {
+    width: 50%;
+    position: relative;
+}
+
+h5 {
+    color: black;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.content6-right {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content6 img {
+    width: 100%;    
+    transition: 1s all;
+}
+
+.content6 img:hover {
+    transform:scale(1.2,1.2);
+    object-fit: contain;
+}
+
+footer {
+    background-color: rgb(33, 33, 79);
+    width: 100%;
+}
+
+.footer-container {
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: auto 0;
+    font-size: 25px;
+}
+
+@media (max-width: 600px) {
+    .content3-wrapper {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+
+    .content-right {
+        margin-top: 20px;
+    }
+
+    .content3-wrapper img {
+        height: 20vh;
+    }
+
+    /* .content5-wrapper {
+        flex-direction: column;
+    } */
+
+    .content5-wrapper img{
+        width: 40%;
+        height: 40vh;
+    }
+
+    .content5-wrapper article {
+        display: flex;
+        background-color: white;
+        margin: auto;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .content6 {
+        flex-direction: column;
+    }
+
+    .content6-left, .content6-right {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .footer-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-container img {
+        margin: 20px;
+    }
+}
